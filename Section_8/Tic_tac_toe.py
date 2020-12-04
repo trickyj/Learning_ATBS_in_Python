@@ -2,8 +2,8 @@
 
 def drawBoard(board):
 
-    print(board['top-L'] + '|' + board['top-M'] + '|' + board['top=R'])
+    print(board['7'] + '|' + board['8'] + '|' + board['9'])
     print('-----')
-    print(board['mid-L'] + '|' + board['mid-M'] + '|' + board['mid-R'])
+    print(board['4'] + '|' + board['5'] + '|' + board['6'])
     print('-----')
-    print(board['low-L'] + '|' + board['low-M'] + '|' + board['low-R'])
+    print(board['1'] + '|' + board['2'] + '|' + board['3'])
