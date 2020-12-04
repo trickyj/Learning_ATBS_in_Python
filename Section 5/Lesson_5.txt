@@ -1,0 +1,29 @@
+Writing a Complete Program : Guess the number.
+
+
+#this is a guess the number game.
+
+import random #this module helps to generate random numbers.
+
+print('Hello, whats your name ?')
+name = input() #this will take users input and store it into name variable.
+
+print('Well, '+ name +', I am thinking of a number between') # this will print the above name variable (users input) and print it.
+secretNumber = random.randint(1, 20) #this will genrate random number between 1 to 20 and store it into secretNumber variable.
+try: # this is for error handling. 
+	for guessesTaken in range(1, 7): # - The range() function called with one, two or three arguments. example - range(0, 10) or 								 # - range(0, 10, 5)
+		print('Take a guess.')
+		guess = int(input()) #this takes the input from the user and store it into guess variable. and int function is for intigers
+		if guess < secretNumber: #here I am using if , elif and else functions.
+			print('Your guess is too low.')
+		elif guess > secretNumber:
+			print('Your guess is too high.')
+		else:
+			break #this is for guessing the correct answer.
+
+	if guess == secretNumber: #here I am using if and else statements.
+		print('Good Job,' + name +'! you guessed my number in '+ str( guessesTaken ) +' gueeses')
+	else:
+		print('Nope. The number I was thinking of was ' + str( secretNumber ))
+except ValueError: #error handling.
+	print('You have to type numbers only.')

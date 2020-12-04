@@ -1,0 +1,89 @@
+Lesson 16
+
+************************************************
+Similarties between Lists and Strings
+************************************************
+
+String in python is Immutable they cannot be changed.
+
+Proper way to modify the string is to use a new string using slices.
+
+************************************************
+Example - 
+************************************************
+
+name = 'honey a cat'
+
+newName = name[0:7] + 'the' + name[8:12]
+
+newName
+************************************************
+The difference between Immutable and Mutable comes up with "references"
+************************************************
+References
+
+************************************************
+Example - 
+************************************************
+spam = [0, 1, 2, 3, 5]
+#i want to add cheese to spam
+cheese  = spam
+cheese[1] = 'hello'
+cheese
+************************************************
+output will be 
+
+[0, 'hello', 2, 3, 4, 5]
+************************************************
+when I type spam. Even the output of spame is same like cheese
+
+[0, 'hello', 2, 3, 4, 5]
+************************************************
+
+It just stores the rerefence ID's and store that into the variable (spam) and (cheese). But both are referring to same list. 
+
+************************************************
+
+Example - 
+************************************************
+def eggs(someparameter):
+	someparameter.append('hello')
+
+spam  = [1, 2, 3]
+eggs(spam)
+print(spam)
+
+output will be
+
+[1, 2, 3, 'hello']
+
+************************************************
+To make the total copy of the above list use the the copy module. 
+
+Import copy
+
+example - 
+
+spam = ['A', 'B', 'C', 'D']
+cheese = copy.deepcopy(spam)
+cheese [1] = 42
+cheese
+
+output is - 
+
+['A', '42', 'C', 'D']
+
+************************************************
+To Recap:
+- Strings can do a lot of the same things lists can do, but strings are immutable.
+- Immutable values like strings and tuples cannot be modified "in place".
+- Mutable values like lists can be modified in place.
+- Variables don't contain lists, they contain references to lists.
+- When passing a list argument to a function, you are actually passing a list reference.
+-changes made to a list in a function will affect the list outside the function.
+- The \ line cotinuation character can be used to stretch python instructions across multiple lines. 
+************************************************
+
+Other resourses - 
+
+References are explained very well in Ned Batchelder's talk " Facts and Mythis about python names and values"

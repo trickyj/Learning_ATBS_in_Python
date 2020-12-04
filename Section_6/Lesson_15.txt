@@ -1,0 +1,87 @@
+The List Methods. 
+************************************************
+In this I am going to introduce a new concept called Methods a method is the same thing as a function except 
+
+it's attached or cold on a certian value. 
+
+to find the index value of a list 
+************************************************
+example - 
+************************************************
+
+spam = ['hello', 'hi', 'how', 'are']
+
+spam.index('hello')
+************************************************
+
+output will be - 0
+
+************************************************
+List datatypes has several methods. 
+
+append and insert method can be used. 
+
+example - 
+
+spam.append('mouse')
+
+at the end mouse will be added.
+
+************************************************
+
+spam.insert(1, 'chiken')
+
+output - 
+
+spam['cat', 'chiken', 'dog', 'bat']
+
+************************************************
+
+Sort list method is used for re-arrange. 
+
+
+spam.sort()
+
+spam
+
+************************************************
+you can also sort it into reverse order
+
+spam.sort(reverse=True)
+
+spam
+
+************************************************
+Python cannot sort string and int in the list. 
+
+************************************************
+Sort uses ASCII-Betical orders
+
+it means uppercase char comes before the lower case values. 
+
+u can use to make it sort in true alphabetical order
+
+spam.sort(key=str.lower)
+
+************************************************
+To Recap : 
+************************************************
+- Methods are functions that are "called on " Values.
+
+- The index() list method returns the index of an item in the list.
+
+- the append() list method adds a value to the end of a list.
+
+- The insert() list method adds a value anywhere inside a list.
+
+- The remove() list method removes an item, specified by the value, form a list.
+
+- The sort() list method sorts the items in a list.
+
+- The sort() method's reverse = True keyword argument can sort in reverse order. 
+
+- Sorting happens in "ASCII-betical" order. To sort normally, pass key=str.lower.
+
+- These list methods operate on the list "in place", rather than returning a new list value.
+
+************************************************

@@ -1,0 +1,91 @@
+The List Data Type
+
+List starts and ends with Square brackets.
+
+String values seperated by comas.
+*****************************
+Example - 
+*****************************
+[ 'cat', 'rat', 'bat']
+
+spam = [ 'cat', 'rat', 'bat']
+
+spam[0] #here [0] is the indexe where the values of the list is stored. 
+*****************************
+2) List can be accessed using multiple indexes
+*****************************
+example - 
+*****************************
+spam = [ ['cat', 'bat', 'rat'], [10,20,30,40,50]]
+
+spam[0]
+
+output will be 
+
+['cat', 'bat', 'rat']
+
+spam[0][1]
+
+output will be 
+
+'bat'
+
+*****************************
+
+Note - 
+*****************************
+
+Index =  Single Value
+
+Slice = List of values.
+
+example  - 
+
+
+spam = [ ['cat', 'bat', 'rat'], [10,20,30,40,50]]
+
+spam [1:3]
+
+['cat', 'rat']
+
+*****************************
+
+You can use del statement to delete the index value. 
+
+*****************************
+
+example del spam[2]
+
+ 
+ Del statement  = "Unassignment" statement.
+
+ *****************************
+
+In and not in operators is used to find if listed value is in the list or not in the list. 
+
+'howday' in ['hello', 'hi', 'howday', 'hey']
+
+output is true.
+
+*****************************
+To recap
+*****************************
+- A list is a value that contains multiple values.
+
+- The values in a list are also called items.
+
+- you can access items in a list with it's integer index.
+
+- the indexes start at 0 , not 1.
+
+- you can also use negative indexes -1 refers to the last item, -2 refers to the second to last item, and so on.
+
+- You can get multiple items from the list using a slice.
+
+- The slice has two indexes. The list's items start at the first index and go upto , but doesn't include, the second index.
+
+- the len() function, concatenation, and replication work the same way with lists that they do with strings.
+
+- you can covert a value into a list by passing it to the list() function.
+
+*****************************

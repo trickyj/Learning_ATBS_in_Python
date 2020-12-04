@@ -1,0 +1,212 @@
+The Dictonary data type.
+******************************
+Example 1- 
+******************************
+myCat = {'size':'fat', 'color': 'gray', 'disposition': 'loud'}
+
+myCat ['size']
+******************************
+output will be 'fat'
+******************************
+Example 2 - 
+
+We can use to print
+
+'My cat has' + myCat['color'] + 'fur'.
+
+******************************
+output will be 
+******************************
+'My cat has gray fur.'
+
+******************************
+in and not in operators to check the key in the Dictionary.
+******************************
+Note - Dictionary are mutable.
+like list. 
+Variables hold references.
+******************************
+There are 3 dictionary methods. 
+******************************
+The keys(), values(), and items() Dictionary Methods.
+******************************
+Example - It returns list like data types.
+******************************
+Method 1) list(eggs.keys())
+Output will be - 
+['name', 'species', 'age']
+******************************
+Method 2) list(eggs.values())
+['Zophie', 'cat' 8]
+******************************
+Method 3) list(eggs.items())
+
+[('name', 'zophie'), ('species', 'cat'), ('age', 8)]
+
+******************************
+
+eggs.keys()
+
+dict_keys(['name', 'species', 'age'])
+
+******************************
+
+You can use this method in for loops
+******************************
+
+Example - 
+******************************
+
+for k in eggs.keys():
+	print(k)
+******************************
+
+output 
+******************************
+
+name 
+species
+age
+******************************
+
+Eample - 
+******************************
+
+for v in eggs.values():
+	print(v)
+******************************
+
+output is 
+******************************
+
+zophie
+cat
+8
+******************************
+
+example 3 - 
+******************************
+
+for k, v in eggs.items():
+	print(k, v)
+******************************
+
+Output will be 
+******************************
+
+name zophie
+species cat
+age 8
+******************************
+
+Example 4 - Tupel values themself assign to single variable and it will print out these tuples. 
+******************************
+
+for i in eggs.items():
+
+	print(i)
+******************************
+
+('name', 'zophie')
+('species', 'cat')
+('age', 8)
+******************************
+
+note - Tuple they are immutable.
+A tuple is a collection which is ordered and unchangeable. In Python tuples are written with round brackets.
+******************************
+Example - 
+******************************
+
+thistuple = ("apple", "banana", "cherry")
+print(thistuple)
+
+******************************
+
+Python gives us a get method 
+
+The get() Dictionary Method.
+
+Problem statement - It's very TDS to check weather a key exist in a dictionary before accessing the keys value.
+
+To avoid the keyerror. We have to use if statement below.
+
+if 'color' in eggs:
+	print(eggs['color'])
+
+But is Tds to use if every time. 
+
+So use the Get() Dictionary method. 
+
+that takes 2 argument.s
+
+1st argument is -  the key to retrive
+2nd argument is - fall back default value. 
+
+example - 
+
+>>> eggs
+
+{'name': 'Zophie', 'species': 'cat', 'age': 8}
+
+>>> eggs.get('age', 0)
+
+output is 8 
+
+example 2 - 
+
+eggs.get('color', '')
+
+output is blank string
+
+''
+******************************
+
+Example 3
+******************************
+
+picnicItems = {'apples': 5, 'cups': 2}
+print('I am bringing' + str(picnicItems.get('napkins', 0) + 'to the picnic'))
+******************************
+
+output - 
+******************************
+
+I am bringing 0 to the picnic.
+
+******************************
+If we don't use get method then we end up getting KeyError. 
+******************************
+
+example - 
+******************************
+
+print(' I am brining' + str(picnicItems['napkins']) + 'to the picnic.')
+
+Keyerror: 'napkins'
+
+******************************
+
+CharacterCount program
+******************************
+
+import pprint
+message = 'It was a bright cold day in Apri, and the clocks were striking thirteen'
+count = {}
+for character in message.upper(): 
+	count.setdefault(character, 0)
+	count[character] = count[character] + 1
+pprint.pprint(count)
+
+
+******************************
+To Recap : 
+******************************
+
+-Dictionaries contain key-value pairs. Keys are like a list's indexes.
+- Dictionaries are mutable. Variables hold references to dictionary values, not the dictionary value itself.
+- Dictionaries are unordered. There is no "first" key-value pair in a dictionary.
+- The key(), values(), and item() mthods will return list-like values of a dictionary's keys, values, and both keys and values, respectively.
+- The get() method can return a default value if a key doesn't exit.
+- The setdefault() method can set a value if a key doesn't exit. 
+- The pprint module's pprint() "pretty print" function can display a dictionary value cleanly. The pform*() function reuturns a string value of the output.

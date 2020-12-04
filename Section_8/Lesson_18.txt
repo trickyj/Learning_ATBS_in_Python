@@ -1,0 +1,125 @@
+Data Structures
+*****************************************************************************************************************************************
+cat = {'name': 'bunty', 'age': 10, 'color': 'white'}
+
+*****************************************************************************************************************************************
+We can even store this into a blank dictionary and append the same with multiple list. 
+*****************************************************************************************************************************************
+
+allCats = []
+
+allCats.append ({'name': 'bunty', 'age': 10, 'color': 'white'})
+allCats.append({'name': 'bunty', 'age': 1, 'color': 'gray})
+allCats.append({'name': 'kalabunty', 'age': 6, 'color': 'black'})
+
+allCats - 
+*****************************************************************************************************************************************
+output will be something
+*****************************************************************************************************************************************
+
+>>> allCats
+[{'name': 'bunty', 'age': 10, 'color': 'white'}, {'name': 'bitkey', 'age': 5, 'color': 'pink'}, {'name': 'lalya', 'age': 1, 'color': 'orange'}]
+
+*****************************************************************************************************************************************
+Simple game like Tic Tac Toe board game. 
+*****************************************************************************************************************************************
+       |        |       
+'top-L'| 'top-M'|'top-R'
+_______|________|_______
+       |        |       
+'mid-L'| 'mid-M'|'mid-R'
+_______|________|_______
+       |        |       
+'low-L'| 'low-M'|'low-R'
+       |        |   
+*****************************************************************************************************************************************Figure 5-2: The slots of the tic-tac-toe board with their corresponding keys.
+*****************************************************************************************************************************************
+We need to store 9 strings each of the 9 spaces. 
+
+dictionary is a data sctructure. 
+*****************************************************************************************************************************************Note: The strings we use for keys(or even using dictionaries in the first place) are arbitary; as long as it's possible to represent all possible Tic Tac Toe boards with your data structure, you can use it in a Tic tac Toe game program.
+
+I use strings lile 'top-L' because they are short and easy to remember. 
+****************************************************************************************************************************************
+Example of a code using Dictionary 
+*****************************************************************************************************************************************
+>> theBoard = {'top-L': '', 'top-M': '', 'top-R': '','mid-L': '', 'mid-M': '', 'mid-R': '','low-L': '', 'low-M': '', 'low-R': ''}
+
+>>> theBoard
+{'top-L': '', 'top-M': '', 'top-R': '', 'mid-L': '', 'mid-M': '', 'mid-R': '', 'low-L': '', 'low-M': '', 'low-R': ''}
+*****************************************************************************************************************************************
+>>> import pprint #importing the prettier module
+>>> pprint.pprint(theBoard) #output using pretier module
+{'low-L': '',
+ 'low-M': '',
+ 'low-R': '',
+ 'mid-L': '',
+ 'mid-M': '',
+ 'mid-R': '',
+ 'top-L': '',
+ 'top-M': '',
+ 'top-R': ''}
+>>> theBoard['mid-M'] = 'X' #adding a value to mid m row.
+>>> pprint.pprint(theBoard)
+{'low-L': '',
+ 'low-M': '',
+ 'low-R': '',
+ 'mid-L': '',
+ 'mid-M': 'X',
+ 'mid-R': '',
+ 'top-L': '',
+ 'top-M': '',
+ 'top-R': ''}
+>>> theBoard['mid-M'] = '' #removing the value.
+>>> pprint.pprint(theBoard)
+{'low-L': '',
+ 'low-M': '',
+ 'low-R': '',
+ 'mid-L': '',
+ 'mid-M': '',
+ 'mid-R': '',
+ 'top-L': '',
+ 'top-M': '',
+ 'top-R': ''}
+>>> 
+
+*****************************************************************************************************************************************
+This below defined function printBaoard(board) is used to design the board to get the # simbole design.
+
+So this function can be pretty bored and it'll just take one of these tic tac toe dictionary data structures
+as the value for its parameter in board.
+And we can just use a bunch of print statements to print out all those line characters as well as the
+*****************************************************************************************************************************************
+>>> def printBoard(board):
+	print(board['top-L'] + '|' + board['top-M'] + '|' + board['top-R'])
+	print('-----')
+	print(board['mid-L'] + '|' + board['mid-M'] + '|' + board['mid-R'])
+	print('-----')
+	print(board['low-L'] + '|' + board['low-M'] + '|' + board['low-R'])
+
+*****************************************************************************************************************************************	
+>>> printBoard(theBoard)
+o|o|o
+-----
+x|x|x
+-----
+||
+*****************************************************************************************************************************************
+>>> theBoard['mid-R'] = ''
+>>> theBoard['low-R'] = 'x'
+>>> printBoard(theBoard)
+o|o|o
+-----
+x|x|
+-----
+||x
+*****************************************************************************************************************************************
+>>> theBoard['low-L'] = 'o'
+>>> printBoard(theBoard)
+o|o|o
+-----
+x|x|
+-----
+o||x
+>>> 
+*****************************************************************************************************************************************

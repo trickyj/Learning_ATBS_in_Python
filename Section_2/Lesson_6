@@ -1,0 +1,75 @@
+Lesson_6
+
+While Loops
+
+********************************************
+
+spam = 0
+while spam < 5:
+	print('hello world!')
+	spam = spam + 1
+********************************************
+Output  - 
+********************************************
+hello world!
+hello world!
+hello world!
+hello world!
+hello world!
+********************************************
+
+name = ''
+while name != 'your name':
+	print('Please type your name')
+	name = input()
+print('thank you!')
+
+********************************************
+for ever loop
+********************************************
+
+while True: 
+	print('hello world')
+
+********************************************
+
+Break and continue statements
+********************************************
+
+Break statement example -
+********************************************
+name = ''
+while True:
+	print('Please type your name')
+	name = input()
+	if name == 'your name':
+		break
+print('Thank you')
+********************************************
+
+Continue Statement example - 
+********************************************
+
+spam = 0
+while spam < 5:
+	spam = spam + 1
+	if spam == 3:
+		continue
+	print('spam is ' + str(spam))
+********************************************
+Recap = 
+********************************************
+To recap while statements are similar to if statements except that once the execution reaches the end
+
+of a while statements block it jumps back to the start and rechecks condition.
+
+If you ever get stuck in a loop where you just want to quickly terminate your python program you can
+
+just press control.
+
+See a break statement will cause the execution to immediately leave the loop without rechecking the
+
+condition and a continue statement will cause the execution to immediately jump back to the start of
+
+a loop and recheck the condition.
+********************************************

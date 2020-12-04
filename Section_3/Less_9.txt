@@ -1,0 +1,93 @@
+Write your own functions
+
+A Function is like a mini-program in the program
+
+****************************
+Example - 
+****************************
+
+def hello():
+	print('Howdy!')
+	print('Howdy !!')
+	print('Hello there!')
+
+hello()
+hello()
+hello()
+****************************
+Output of this program is 
+****************************
+Howdy!
+Howdy !!
+Hello there!
+Howdy!
+Howdy !!
+Hello there!
+Howdy!
+Howdy !!
+Hello there!
+****************************
+De-Duplicating code -
+It makes your program shorter.
+
+Using arguments is the solution.
+****************************
+def hello(name):
+	print('hello' + name)
+
+hello('vicky')
+hello('rasika') 
+****************************
+
+note - string ('vicky' and 'rasika' ) these values are called arguments.
+
+Well the variable inside the function hello (name) is called the Parameter.
+
+****************************
+Example of a Len function
+****************************
+len('hello')
+output is 5
+'hello has' + str(len('hello')) + 'letters in it.'
+****************************
+output is- 'hello has 5 letters in it'
+****************************
+Example 2 = 
+****************************
+def PlusOne(number):
+	return number + 1
+newNumber = PlusOne(5)
+print(newNumber)
+****************************
+
+note - All print functions return values.
+
+But what does print function returns ?
+
+It retunrs None
+
+its a none type datatype.
+
+
+****************************
+Key word argument - here the print function automatically puts it into new line. here end and sep are used in print function as an optionl keyword arguments.
+****************************
+
+print('hello', end='')
+print('world')
+
+****************************
+
+To recap 
+****************************
+
+- Functions are line a mini-program inside your program.
+- The main point of functions is to get rid of duplicate code.
+- The input to functions are arguments. The output is the return value.
+- The parameters are the variable in between the functions parentheses in the def statement.
+- The return value is specified using the return statement.
+- every function has a return value. If your function doesn't have a return statement, the default return value is none.
+- Keyword arguments to functions are usually for optional arguments.
+The print() function has keyword arguments end and sep.
+
+****************************

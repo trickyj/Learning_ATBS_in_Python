@@ -1,0 +1,148 @@
+Handling Errors with Try/Except
+
+Welcome to lesson 11 which roughly covers pages 72 and 73 of automate the boring stuff with Haiphong
+
+textbook right now getting an error or exception in your play on program means that the entire program
+
+will crash.
+
+
+You don't want this to happen in real world programs.
+
+Instead you want the program to be able to detect errors handle them and then continue to run.
+
+********************
+Example - 
+
+#this below code will generate error. 
+
+def div42by(divideby):
+	retunr 43 / divideby
+
+print(div42by(2))
+print(div42by(3))
+print(div42by(0))
+print(div42by(1))
+print(div42by(5))
+
+*******************
+output -
+*******************
+Traceback (most recent call last):
+  File "/Users/trickyj/PycharmProjects/basics/main.py", line 6, in <module>
+    print(div42by(0))
+  File "/Users/trickyj/PycharmProjects/basics/main.py", line 2, in div42by
+    return 42 / divideby
+ZeroDivisionError: division by zero
+21.0
+14.0
+*******************
+
+But an error happened here when we passed in 0 42 divided by 0.
+
+Cause this 0 division error computers don't really know how to handle dividing a number by zero.
+
+So whenever that happens it says well I don't want to continue running the instructions in this program
+
+because I've just come across this area that I don't know how to handle.
+
+So instead it crashes and terminates the program.
+
+That's why this function call never gets made because the program crashed.
+
+At this point.
+
+But you can handle an error with a try.
+
+Except statement.
+
+The program.
+
+So it looks like this.
+
+**************************************
+def div42by(divideby):
+	try:
+		return 42 / divideby
+	except ZeroDivisionError:
+		print("boo!! You tried dividing it by 0 and it won't work here")
+print(div42by(2))
+print(div42by(3))
+print(div42by(0))
+print(div42by(1))
+print(div42by(5))
+
+**************************************
+output of the program is -
+
+21.0
+14.0
+boo!! You tried dividing it by 0 and it won't work here
+None
+42.0
+8.4
+**************************************
+How to handle a error when input is given ? 
+Input validation error. 
+**************************************
+Example code - Without error handling.
+**************************************
+print('How many cats do you have ?')
+numcats = input() #note input always retunrs the strings. need to convert that into int. 
+
+if int(numcats) >= 5:
+	print('That is lot of cats.')
+else:
+	print('That is not that many cats.')
+**************************************
+Output of a program when I enter string hello. I get valueerror.
+**************************************
+How many cats do you have ?
+hello
+Traceback (most recent call last):
+  File "/Users/trickyj/PycharmProjects/basics/main.py", line 4, in <module>
+    if int(numcats) >= 5:
+ValueError: invalid literal for int() with base 10: 'hello'
+**************************************
+Example code - with error handling.
+**************************************
+print('How many cats do you have ?')
+numcats = input() #note input always retunrs the strings. need to convert that into int. 
+try:
+if int(numcats) >= 5:
+	print('That is lot of cats.')
+else:
+	print('That is not that many cats.')
+except ValueError: 
+	print('You did not enter a number.')
+
+**************************************
+Example - 3 with netgative number 
+**************************************
+print('How many cats do you have ?')
+try:
+
+	numcats = float(input("Enter a number: "))#note input always retunrs the strings. need to convert that into int.
+
+	if int(numcats) >= 5:
+			print('That is lot of cats.')
+
+	elif numcats < 0:
+			print("{0} is negative number".format(numcats))
+
+	else:
+			print('That is not that many cats.')
+
+except ValueError:
+	print('You did not enter a number.')
+**************************************
+
+To Recap: 
+
+- A divide-by-Zero error happens when Python Divides a number by Zero.
+
+- Errors cause the program to crash
+
+- An error that happens inside a try block will cause code in the except block to execute. That code can handle the error or display a message to the user so that the program can keep going.
+
+**************************************

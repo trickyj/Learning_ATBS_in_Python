@@ -1,0 +1,81 @@
+Lesson 3
+
+Write our first program
+*****************************************
+Function = Mini-Program in the program
+*****************************************
+Values passed to the functions = Arguments
+
+The len() Function 
+
+What len() does is - It takes the String argumet and then evalutes to the integer value of the length of the string.
+*****************************************
+The str(), int(), and floa() Functions
+*****************************************
+Example -  this is how the program works.
+
+#first the (myAge) variable  will evaluate to the value which is inside it.
+
+print (' you will be ' + str(int(myAge) + 1) + 'in a year.')
+
+# Then that gets passed to the int() function, wich returns an integer form of it 
+print('you will be ' + str(int('26') +1 )+ 'in a year.')
+
+#Then we add 1 to that integer.
+
+print('you will be' + str(26 + 1 ) + 'in a year.')
+
+# Then we had to convert that back to a string value, because we want to concatenate the other streets next to it. 
+
+print('you will be ' + str( 27 ) + 'in a year.')
+
+# note '' value inside single quote is string. and then it is just a string concatenate.
+
+print ('you will be ' + '27' + 'in a year.')
+
+
+print ('you will be 27 in a year.')
+
+*****************************************
+
+Example of a program - 
+
+It ask for your name
+It will then count the length of the name
+It will then ask for your age
+It will then add 1 and will show you how old you are next year. 
+
+*****************************************
+
+# This program says hello and asks for your name
+
+print('Hello World')
+
+print('What is your name?') # ask for their name
+
+myName  = input() #myName is a Function and Intput() lets user type in value.
+
+print('It is good to meet you, ' + myName)
+
+print ('The lenght of your name is: ')
+print(len(myName)) 
+
+#len() is a function What #len() does is - It takes the String argumet #and then evalutes to the integer value of #the length of the string.
+
+print('What is your age?') #ask for thier age.
+
+myAge = input() # myAge is a function and input() let users type in value.
+
+print('you will be ' + str(int(myAge)+ 1) + ' in a year.')
+*****************************************
+
+Recap : 
+
+- The programs into the file editor
+- The eecution starts at the top and moves down
+- # comments are ingnored by Python
+- Functions are mini-programs in your program
+- print() displayes the value passed to it
+- input() lets user tyoe in a value
+- len() takes a string value and retuns an integer value of the string's length.
+- int(), str(), and float() converts values' data type

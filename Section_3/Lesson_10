@@ -1,0 +1,105 @@
+Pages 67 to 71
+******************************
+Global and Local Scopes.
+******************************
+In python variables inside of a function can have the same name as a variable outside of the function.
+
+But they're considered two seperate variable to understand how this works need to know about global & local scopes. 
+******************************
+Each function has its own local scope.
+******************************
+ Eaxmple - 
+******************************
+ spam = 42 # global variable (global scope)
+
+ def eggs():
+ 	spam = 42 #local variable ( the eggs function's local scope)
+
+#this is a global scope.
+ print('Some code here.')
+ print('Some code here.')
+ ******************************
+ Note - 
+******************************
+The global scope is created when the program starts and is destroyed when the program terminates a local
+
+scope is created whenever a function is called.
+
+And all the variables just assigned during this function call exist within that local scope when the
+
+function returns the local scope is destroyed.
+
+******************************
+in scope's matter for several reasons.
+
+1) code in a global scope can't use local variables 
+2) code in a local scope can access
+global variables.
+3) Code in one function's local scope cannot use variables in anther local scope.
+******************************
+Example 1 - 1) code in a global scope can't use local variables 
+******************************
+def spam():
+	eggs = 99
+spam()
+print(eggs)
+******************************
+output is error - 
+******************************
+Traceback (most recent call last):
+  File "/Users/trickyj/PycharmProjects/basics/main.py", line 4, in <module>
+    print(eggs)
+NameError: name 'eggs' is not defined
+
+******************************
+Example 2 -
+******************************
+def spam():
+	eggs = 99
+spam()
+print(eggs)
+
+def bacon():
+	ham = 101
+	eggs = 0
+spam()
+
+******************************d
+
+Eample 3
+
+******************************
+def spam():
+	print(eggs)
+
+eggs  = 42
+spam()
+
+
+******************************
+
+Note - Assignment statement = Local Variable
+ 
+no assignment statement = Global variable.
+
+******************************
+Example 
+******************************
+def spam():
+	eggs = 'hello'
+	print(eggs)
+
+eggs  = 42
+spam()
+print(eggs)
+******************************
+
+To Recap: 
+
+- A Scope can be thought of as an area of the source code, and as a container of variables.
+- The global scope is code outside of all functions. Variables assigned here are global variables.
+- Each function's code is in its own local scope variables assigned here are local variables.
+- Code in the global scope cannot use any local variables.
+- Code in a function's local scope cannot use  variables in any another function's local scope.
+- if there's an assignment statement for a variable in a function, that is a local variable.
+

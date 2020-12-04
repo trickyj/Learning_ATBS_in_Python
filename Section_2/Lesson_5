@@ -1,0 +1,60 @@
+Lesson_5
+If, Else, and Elif statements
+
+********************************************
+If statement - Example 
+********************************************
+
+name = 'Payal'
+if name == 'Payal':
+	print('Hi Payal')
+print('Done')
+
+********************************************
+Else statement - Example
+********************************************
+password = 'alphago'
+if password == 'alphago'
+	print('Access granted.')
+else:
+	print('Wrong Password.')
+
+********************************************
+Elif If statement - Example 
+********************************************
+Name = 'Bob'
+age = 20000
+if name == 'Alice':
+	print('hi Alice')
+elif age < 12:
+	print('you are not alice, kiddo.')
+elif age > 1000;
+	print('Unlike you, alice is not an unded, imortal vamp.')
+elif age > 100:
+	print('You aer not Alice, grannie.')
+********************************************
+Recap - 
+********************************************
+To recap an if statement can be used to conditionally execute code depending on whether or not the if
+
+statements condition is true or false.
+
+In l if that is an else if statement can follow an if statement in its block executes if the condition
+
+is true and all the previous conditions have been false in.
+
+Else statement comes at the end.
+
+Its block is executed if all the previous conditions have been false.
+
+And finally the values zero zero point zero and the empty string are considered to be false values when
+
+used in conditions they are considered to be the same as the false Boolean values.
+
+You can always see which for yourself which values are truth your falsie by passing them to the bool
+********************************************
+Example - bool(0) = false
+bool(12) = true
+bool('hello') = True
+bool ('') = false.
+********************************************

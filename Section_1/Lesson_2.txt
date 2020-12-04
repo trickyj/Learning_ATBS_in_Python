@@ -1,0 +1,61 @@
+Lesson 2 
+*****************************************
+--> In python 2+2 is called an "Expression"
+*****************************************
+Expression  =  Values + Operators (operators such as the plus sign)
+*****************************************
+--> Order of Operations: 
+*****************************************
+1) Parentheses
+2) Multiplication / Division
+3) Addition / Subtraction
+*****************************************
+Example -  
+*****************************************
+a) 2+3*6
+
+In this case, Multiplication is done first. 
+
+2 + 3 * 6
+
+3 * 6 = 18
+
+2 + 18
+
+Answer is 20
+*****************************************
+b) (2 + 3 ) * 6
+
+In this case, Parentheses is solved first. 
+
+(5) * 6
+
+Answer is 30
+
+*****************************************
+ 
+ Datatypes
+
+ All Values has a Datatypes, Is a Category of values and every value belongs to exactly one datatype.
+
+ Example - Whole number values like  -2 and 30 are integers
+
+ *****************************************
+ Variables
+*****************************************
+ Your computer can save values to the computer's memory with variables.
+
+ Note  - So if a python instruction evaluates to a single value, it's an expression. Otherwise it's a statement. 
+
+ Evaluates = expression 
+ Doesn't evaluate = Statement
+*****************************************
+ Recap 
+*****************************************
+ - IDLE is an editor for python
+ - Interactie shell (>>>) & File Editor
+ - Exporessions = Values + Operators
+ - Int, Float, String
+ - 'Hello World'
+ - spam = 42
+ - spam + 1

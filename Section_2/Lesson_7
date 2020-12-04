@@ -1,0 +1,67 @@
+Lesson_7
+
+For Loop
+
+********************************************
+
+print('My name is')
+for i in range(5)L
+	print('Jimmy five times ' + str(i))
+
+********************************************
+Output is - 
+********************************************
+Jimmy five times 0
+Jimmy five times 1
+Jimmy five times 2
+Jimmy five times 3
+Jimmy five times 4
+********************************************
+
+Example 2 - 
+
+********************************************
+
+total = 0
+for num in range(101):
+	total = total + num
+print(total)
+
+********************************************
+Output is 5050
+********************************************
+
+While Loop Equivalent of a for Loop
+
+********************************************
+Example 3 -
+********************************************
+
+print('My Name is')
+i = 0
+while i < 5:
+	print('Jimmy five times' + str(i))
+	i = i + 1
+
+********************************************
+output is - 
+********************************************
+My Name is
+Jimmy five times0
+Jimmy five times1
+Jimmy five times2
+Jimmy five times3
+Jimmy five times4
+********************************************
+
+To Recap: 
+
+- for loops will loop a specific number of times.
+
+- The range() function called with one, two or three arguments.
+
+example - range(0, 10) or range(0, 10, 5)
+
+start & end and third one is step argument.
+
+- break and continue can be used in for loops

@@ -1,0 +1,98 @@
+Lesson 4
+********************************************
+Flow charts basic flow control concepts.
+********************************************
+Before you lear about flow control statement, you first need to learn about how to represent those yes and no options.
+********************************************
+This involves three things: 
+********************************************
+1) Bollean Values,
+2) Comparison Operators,
+3) Bollean Operators.
+********************************************
+The Bollean data type has only 2 values.
+********************************************
+1) True 
+2) False.
+
+Line any other Value Boolean values are used in expressions and can be stored in variables.
+
+Just be sure to type them with a Capital T or Cap F and the rest of the word in lower case.
+
+example - True, False.
+********************************************
+-- Comparison Operators
+********************************************
+== Equal to
+!= Not equal to
+< Less than
+> Greater than
+<= Less than pr equal to
+>= Greater than or equal to.
+
+********************************************
+
+There are also three Boolean operators 
+
+and, or and not.
+
+--> Example - of and operator.
+
+True and True = True
+
+False and True = False
+
+True and False = False. 
+
+********************************************
+The and Operators Truth Table.
+********************************************
+Exporession     |  Evaluates to...
+********************************************
+True and True   |  True
+True and Flase  |  False
+False and True  |  False
+Flase and False |  False
+ 
+
+--> Example - The Or Operator
+
+********************************************
+The Or Operators Truth Table.
+********************************************
+Exporession     |  Evaluates to...
+********************************************
+True or True   |   True
+True or Flase  |   True
+False or True  |   True
+Flase or False |   False
+********************************************
+
+--> Eample - The not Operator.
+
+********************************************
+The Not Operators Truth Table.
+********************************************
+Exporession     |  Evaluates to...
+********************************************
+Not True   |   False
+Not Flase  |   True
+********************************************
+Example of a code -
+********************************************
+
+myAge = 24
+myPet = 'cat'
+myAge > 20 and myPet == 'cat'
+
+Output is - True
+********************************************
+
+Recape:
+
+- Boolean Data type: True , False
+- Comparison Operator: ==, !=, <,>, <=, >=
+- == is comparison, = is assigment
+- Boolean Operators: and, or, not
+
+********************************************

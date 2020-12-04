@@ -1,0 +1,112 @@
+For Loops with List,s Multiple Assignment, and Augmented Operators.
+
+*****************************
+Example - 
+***************************
+for i in range(4):
+	print(i)
+
+
+***************************
+
+Example of using range(len)
+***************************
+
+supplies = ['pens', 'sunglasses', 'papperclips', 'colors']
+
+for i in range(len(supplies)):
+print('Index' + str(i) +' in supplies is : ' + supplies[i])
+
+***************************
+
+Multiple assignment list. 
+
+***************************
+
+Example - 
+***************************
+cat = ['fat', 'orange', 'white']
+
+size =  cat[0]
+
+color = cat [1]
+
+disposition  = cat[2]
+***************************
+Instead I can use multiple assigment. 
+***************************
+size, color, disposition = 'skinny', 'black', 'quite'
+
+***************************
+Doing swap using the mutiple assignment. 
+***************************
+Example - 
+***************************
+a = 'AAAA'
+
+b = 'BBBB'
+***************************
+a, b = b, a #multiple assignment. 
+***************************
+Output 
+***************************
+a
+
+'BBB'
+
+b
+
+'AAA'
+***************************
+Augmented assignment Operators
+***************************
+
+Example - 
+
+spam = 42
+
+spam = spam + 1
+
+***************************
+
+Using Augmented assignment we can type
+
+spam += 1
+
+output 
+
+spam 
+
+44
+
+***************************
+
+Table 4-1 The Augmented Assigment Operators.
+***************************************************************
+Augmented assingment statement    |  Equivalent assignment statement
+
+***************************************************************
+spam += 1							spam = spam + 1
+
+spam -= 1							spam = spam - 1
+
+spam *= 1     						spam = spam * 1
+
+spam /= 1							spam = spam / 1
+
+spam %= 1							spam = spam % 1
+****************************************************************
+
+
+To Recap: 
+
+- For Loops technically iterate over the values in a list.
+
+- The range() function returns a list-like value, which can be passed to the list() function if you need an actual list value.
+
+- Variables can swap their values using multiple assignment.
+
+- Augmented assignment operators like += are used as shortcuts. 
+
+
+****************************************************************

@@ -1,0 +1,77 @@
+Python's Buit-in Functions
+***********************************
+These includes the 
+
+print function,
+input function,
+length function,
+
+note - Python also comes with a set of modules called the standard library.
+
+Each module is a Python program that contains a related group of functions that can be used in your programs.
+************************************
+Example - Math module has mathematics related functions.
+************************************
+The random module has a random number related functions.
+************************************
+Note - Before you can use the functions in a module. You must import the module with an import statement.
+************************************
+Example - 
+************************************
+import random
+
+random.randint(1, 10)
+************************************
+output - it will show you any random intigers between 1 and 10
+************************************
+note - So since the rant in function is inside the random module you have to first type random dot in front
+
+of the function name to tell Python to look inside this module for this function.
+
+Randy.
+
+************************************
+
+sys.exit() will end the program.
+
+************************************example- 
+************************************
+import sys
+print('Hello')
+sys.exit() #the program will end here.
+print('Goodboy')
+************************************
+Using the third party modules.
+************************************
+Using pip program to install the module name - pyperclip.
+
+this is the module that gives you the ability to copy and paste text to and from the clipboard.
+
+************************************
+Example - 
+************************************
+import pyperclip.
+
+it has copy and paste function
+
+pyperclip.copy()
+pyperclip.paste()
+
+************************************
+pyperclip.copy('hello world')
+pyperclip.paste()
+
+output is 'hello world'
+************************************
+
+To recap  - 
+
+************************************
+
+- you can import modules and get access to new functions.
+
+- The modules that come with Python are called the standard library, but you can also install third-party modules using the pip tool.
+- the sys.exit() function will immediately quit your program.
+- The pyperclip third-party module has copy() and paste() functions for reading and writing text to the clipboard.
+
+************************************
